@@ -1,0 +1,126 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+/* Mobiles and others */
+
+/* iPad size */
+@media (min-width: 768px) {}
+
+/* Desktop and Laptops */
+@media (min-width:1024px) {
+
+    button {
+        width: fit-content;
+        padding: 15px 30px;
+        font-size: 15pt;
+        font-weight: 700;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        transform: translate(0, -5px);
+        color: mediumspringgreen;
+        cursor: pointer;
+    }
+
+    .progressb {
+        height: 0.8em;
+        margin-top: 3px;
+    }
+
+    #mainprogress {
+        margin-left: 10px;
+    }
+
+    #rankprogress {
+        margin-left: 10px;
+        width: 15em;
+    }
+
+    .showmore:hover {
+        transform: translate(0, -5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* dark theme */
+    @media (prefers-color-scheme: dark) {}
+
+    /* layouts */
+    .container {
+        display: grid;
+        height: fit-content;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr auto;
+        grid-template-areas:
+            "header header"
+            "lmain rmain"
+            "info info";
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .gridprefs {
+        grid-area: lmain;
+    }
+
+    .ldashboard {
+        grid-area: rmain;
+    }
+
+    .info {
+        grid-area: info;
+    }
+
+    /* div styles */
+    .header {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subject {
+        font-size: 35pt;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 25pt;
+    }
+
+    .description {
+        margin-top: 10px;
+        margin-left: 5px;
+        font-size: 13pt;
+    }
+
+    .pagerefs {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 70px;
+        margin-bottom: 100px;
+        width: fit-content;
+    }
+
+    .ldashboard {
+        border-radius: 13px;
+        background-color: aliceblue;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        height: 25em;
+        width: 30em;
+        justify-self: center;
+    }
+
+    .info {
+        background-color: whitesmoke;
+        color: grey;
+        height: fit-content;
+    }
+
+    .main_button_container {
+        display: flex;
+        flex-direction: row;
+    }
+}

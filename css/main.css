@@ -1,0 +1,109 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+.text-in_btn {
+    font-family: "Pretendard", "Noto Sans KR";
+}
+
+span {
+    font-family: "Pretendard", "Noto Sans KR";
+}
+
+.aligncenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columnflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowflex {
+    display: flex;
+    flex-direction: row;
+}
+
+.lfont {
+    font-weight: 200;
+}
+
+.mfont {
+    font-weight: 400;
+}
+
+.bfont {
+    font-weight: 600;
+}
+
+.exbfont {
+    font-weight: 800;
+}
+
+.noshadow {
+    box-shadow: none;
+}
+
+.notranslate:hover {
+    transform: translate(0, 0);
+}
+
+/* Mobiles and others */
+
+/* iPad size */
+@media (min-width: 768px) {}
+
+/* Desktop and Laptops */
+@media (min-width:1024px) {
+    body::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: gray;
+        border-radius: 5px;
+        background-clip: padding-box;
+        border: 2px solid transparent;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+        background-color: lightgray;
+    }
+
+    button {
+        background-color: aliceblue;
+        width: fit-content;
+        font-family: "Pretendard", "Noto Sans KR";
+        border-radius: 10px;
+        border: none;
+        transition: 0.3s;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    button:hover {
+        transform: translate(0, -5px);
+        color: mediumspringgreen;
+        cursor: pointer;
+    }
+
+    .progressb {
+        appearance: none;
+    }
+
+    .progressb::-webkit-progress-bar {
+        background: black;
+        border-radius: 10px;
+    }
+
+    .progressb::-webkit-progress-value {
+        border-radius: 10px;
+        background: #1D976C;
+        background: -webkit-linear-gradient(to right, #48fff0, #73ffce);
+        background: linear-gradient(to right, #48fff0, #73ffce);
+    }
+
+    .blur {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+}

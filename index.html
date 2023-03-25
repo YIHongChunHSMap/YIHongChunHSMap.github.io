@@ -2,28 +2,63 @@
 <html lang="ko">
 
 <head>
-    <title>용인홍천고등학교 교내지도</title>
+    <title>용인홍천고등학교 길라잡이</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="stylesheet" type="text/css" href="../css/mainpage.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mainpage.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="js/autocompletion.js"></script>
+    <script src="js/mapfinding.js"></script>
+
 </head>
 
 <body style="margin: 0">
     <div class="container">
         <div class="header maingriditem">
-            <span class="subject aligncenter bfont">Work In Progress</span>
-            <span class="version">개발 진행중! 기다려주세요!</span>
+            <span class="subject aligncenter bfont">용인홍천고등학교 길라잡이</span>
+            <span class="version">2023. 03. 25. 버전</span>
         </div>
+        <div class="controlPanel maingriditem" style="padding:30px">
+            <div class="columnflex" style="position: relative;">
+                <span class="exbfont aligncenter" style="font-size:15pt">선생님/부서 검색</span>
+                <input id="personnelSearch" autocomplete="off" type="text" placeholder="선생님 혹은 부서를 검색하세요"
+                    oninput="makeRecommendList(this, 'person')" onblur="clearSuggestions(this)">
+                <div class="suggestionList" id="personnelSearch">
+                </div>
+            </div>
+            <div class="columnflex" style="margin-top:1.2em; position: relative;">
+                <span class="exbfont aligncenter" style="font-size:15pt">경로 찾기</span>
+                <div class="rowflex aligncenter">
+                    <div class="columnflex">
+                        <input id="startInput" autocomplete="off" type="text" placeholder="시작점"
+                            oninput="makeRecommendList(this, 'location')" onblur="clearSuggestions(this)">
+                        <div class="suggestionList" id="startInput" style="width:40%;">
+                        </div>
+                    </div>
+                    <div class="columnflex">
+                        <input id="endInput" autocomplete="off" type="text" placeholder="종착점"
+                            oninput="makeRecommendList(this, 'location')" onblur="clearSuggestions(this)">
+                        <div class="suggestionList" id="endInput" style="width:40%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map maingriditem">The map comes here.</div>
+        <footer class="info" style="padding: 10px 70px">
+            <b>용인홍천고등학교 길라잡이</b> by aumest &copy; 2023. All rights reserved.<br>
+            Contact: zhxpr1229@gmail.com / <a href="https://github.com/aumest" style="color:gray">Github Profile</a>
+        </footer>
 </body>
 
 </html>

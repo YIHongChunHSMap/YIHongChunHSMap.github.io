@@ -2,11 +2,73 @@
 
 /* Mobiles and others */
 
-/* iPad size */
-@media (min-width: 768px) {}
+/* layouts */
+.container {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr auto;
+    grid-template-areas:
+        "header header"
+        "controlPanel controlPanel"
+        "map map"
+        "info info";
+}
+
+.header {
+    grid-area: header;
+}
+
+.map {
+    grid-area: map;
+}
+
+.controlPanel {
+    grid-area: controlPanel;
+}
+
+.info {
+    grid-area: info;
+}
+
+/* div styles */
+.header {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject {
+    font-size: 35pt;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.subtitle {
+    font-size: 25pt;
+}
+
+.description {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 13pt;
+}
+
+.info {
+    background-color: whitesmoke;
+    color: grey;
+    height: fit-content;
+}
+
+.main_button_container {
+    display: flex;
+    flex-direction: row;
+}
 
 /* Desktop and Laptops */
-@media (min-width:1024px) {
+@media (min-width:768px) {
 
     button {
         width: fit-content;
@@ -16,27 +78,7 @@
         border-radius: 10px;
     }
 
-    button:hover {
-        transform: translate(0, -5px);
-        color: mediumspringgreen;
-        cursor: pointer;
-    }
-
-    .progressb {
-        height: 0.8em;
-        margin-top: 3px;
-    }
-
-    #mainprogress {
-        margin-left: 10px;
-    }
-
-    #rankprogress {
-        margin-left: 10px;
-        width: 15em;
-    }
-
-    .showmore:hover {
+    .innerbutton:hover {
         transform: translate(0, -5px);
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     }
@@ -48,24 +90,24 @@
     .container {
         display: grid;
         height: fit-content;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 2fr auto;
         grid-template-areas:
-            "header header"
-            "lmain rmain"
-            "info info";
+            "header header header"
+            "map map controlPanel"
+            "info info info";
     }
 
     .header {
         grid-area: header;
     }
 
-    .gridprefs {
-        grid-area: lmain;
+    .map {
+        grid-area: map;
     }
 
-    .ldashboard {
-        grid-area: rmain;
+    .controlPanel {
+        grid-area: controlPanel;
     }
 
     .info {
@@ -73,6 +115,16 @@
     }
 
     /* div styles */
+    .controlPanel {
+        border-radius: 13px;
+        background-color: aliceblue;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        width: 70%;
+        height: fit-content;
+        justify-self: center;
+        margin-bottom: 20px;
+    }
+
     .header {
         height: 300px;
         display: flex;
@@ -84,6 +136,7 @@
     .subject {
         font-size: 35pt;
         text-align: center;
+        word-break: keep-all;
     }
 
     .subtitle {
@@ -96,23 +149,6 @@
         font-size: 13pt;
     }
 
-    .pagerefs {
-        display: flex;
-        flex-direction: column;
-        padding: 0px 70px;
-        margin-bottom: 100px;
-        width: fit-content;
-    }
-
-    .ldashboard {
-        border-radius: 13px;
-        background-color: aliceblue;
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        height: 25em;
-        width: 30em;
-        justify-self: center;
-    }
-
     .info {
         background-color: whitesmoke;
         color: grey;
@@ -122,5 +158,13 @@
     .main_button_container {
         display: flex;
         flex-direction: row;
+    }
+
+    #startInput {
+        width: 80%;
+    }
+
+    #endInput {
+        width: 80%;
     }
 }

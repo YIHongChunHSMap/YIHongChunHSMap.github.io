@@ -50,8 +50,111 @@ span {
 
 /* Mobiles and others */
 
-/* iPad size */
-@media (min-width: 768px) {}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 3px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: lightgray;
+}
+
+button {
+    background-color: aliceblue;
+    width: fit-content;
+    font-family: "Pretendard", "Noto Sans KR";
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translate(0, -3px);
+    color: mediumspringgreen;
+    cursor: pointer;
+}
+
+input {
+    background-color: white;
+    transition: 0.3s;
+}
+
+input[type=text] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 5px 3px inset rgba(0, 0, 0, 0.1);
+    font-size: 11pt;
+}
+
+input:hover {
+    border: 1px solid gray;
+}
+
+input:focus {
+    transform: translate(0, -3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* autocompletion css */
+
+.suggestionList {
+    position: absolute;
+    top: 100%;
+    width: fit-content;
+    font-size: 11pt;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.suggestion {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0px;
+    text-align: left;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.suggestion:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.mainSuggestion {
+    font-size: 14pt;
+}
+
+.subSuggestion {
+    font-size: 10pt;
+    color: gray;
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+    height: fit-content;
+    word-break: keep-all;
+}
+
+.subSuggestion li {
+    display: inline;
+}
+
+.emph {
+    font-weight: 600;
+}
+
+.subEmph {
+    background-color: rgba(255, 255, 0, 0.85);
+}
 
 /* Desktop and Laptops */
 @media (min-width:1024px) {

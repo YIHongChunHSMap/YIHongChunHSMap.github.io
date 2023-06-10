@@ -167,4 +167,118 @@
     #endInput {
         width: 80%;
     }
+
+    .map {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    img {
+        position: relative;
+        top: -100px;
+        left: 30px;
+    }
+
+    /* for isometric animations */
+    .stackMap {
+        top: -50px;
+        position: relative;
+        transform: skewY(-15deg);
+    }
+
+    .stack {
+        position: relative;
+        list-style: none;
+        width: 140px;
+        padding: 15px;
+        transition: .3s;
+        z-index: var(--i);
+        letter-spacing: 0.05em;
+        font-weight: 800;
+    }
+
+    .stack::before {
+        content: '';
+        position: absolute;
+        left: -90px;
+        top: 0;
+        width: 90px;
+        height: 100%;
+        transform-origin: right;
+        transform: skewY(45deg);
+        transition: .3s;
+    }
+
+    .stack::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 90px;
+        top: -90px;
+        left: 0px;
+        background-color: red;
+        transform-origin: bottom;
+        transform: skewX(45deg);
+        transition: .3s;
+    }
+
+    .stack:hover {
+        background-color: #02c72c;
+        transform: translateX(-50px);
+    }
+
+    .stack:hover::before {
+        background-color: #02e032;
+    }
+
+    .stack:hover::after {
+        background-color: #00ff37;
+    }
+
+    .black::before {
+        background-color: #4d4d4d;
+    }
+
+    .black {
+        background-color: #343434;
+        color: #f0f0f0;
+    }
+
+    .black::after {
+        background-color: #696969;
+    }
+
+    .white::before {
+        background-color: #e6e6e6;
+    }
+
+    .white {
+        background-color: #cbcbcb;
+    }
+
+    .white::after {
+        background-color: #f0f0f0;
+    }
+
+    .stack {
+        position: relative;
+        cursor: pointer;
+        transition: 0.6s;
+    }
+
+    .stack:hover .top {
+        background-color: #00ff37;
+        transition: background-color .3s ease-in;
+    }
+
+    .stack:hover .left {
+        background-color: #02e032;
+        transition: background-color .3s ease-in;
+    }
+
+    .stack:hover .right {
+        background-color: #02c72c;
+        transition: background-color .3s ease-in;
+    }
 }

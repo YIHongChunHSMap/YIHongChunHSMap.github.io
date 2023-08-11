@@ -178,6 +178,9 @@
         position: relative;
         top: -100px;
         left: 30px;
+        max-width: 100%;
+        width: auto;
+        height: auto;
     }
 
     /* for isometric animations */

@@ -1,0 +1,533 @@
+{
+    "items": [
+        {
+            "name": "제1급식실",
+            "code": "R101",
+            "pos": [
+                "220",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H101"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "제2급식실",
+            "code": "R102",
+            "pos": [
+                "455",
+                "187"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H102"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "교직원식당",
+            "code": "R103",
+            "pos": [
+                "505",
+                "271"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H102"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "교장실",
+            "code": "R104",
+            "pos": [
+                "570",
+                "271"
+            ],
+            "homeroomTeacher": "교장선생님",
+            "adjList": [
+                "H103"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "행정실",
+            "code": "R105",
+            "pos": [
+                "628",
+                "271"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H104"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "인쇄실",
+            "code": "R106",
+            "pos": [
+                "748",
+                "187"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H106"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "숙직실",
+            "code": "R107",
+            "pos": [
+                "763",
+                "271"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H106"
+            ],
+            "fontSize": "8pt"
+        },
+        {
+            "name": "통합교육\n지원실 1",
+            "code": "R108",
+            "pos": [
+                "798",
+                "463"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H111"
+            ],
+            "fontSize": "7pt"
+        },
+        {
+            "name": "통합교육\n지원실 2",
+            "code": "R109",
+            "pos": [
+                "848",
+                "463"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H112"
+            ],
+            "fontSize": "7pt"
+        },
+        {
+            "name": "교과교실 1",
+            "code": "R110",
+            "pos": [
+                "902",
+                "468"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H113"
+            ],
+            "fontSize": "8pt"
+        },
+        {
+            "name": "학생인권\n안전부",
+            "code": "R111",
+            "pos": [
+                "673",
+                "512"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H114"
+            ],
+            "fontSize": "7pt"
+        },
+        {
+            "name": "Wee\n클래스",
+            "code": "R112",
+            "pos": [
+                "690",
+                "580"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H115"
+            ],
+            "fontSize": "7pt"
+        },
+        {
+            "name": "보건실",
+            "code": "R113",
+            "pos": [
+                "725",
+                "642"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H116"
+            ],
+            "fontSize": "9pt"
+        },
+        {
+            "name": "1학년 \n12반",
+            "code": "R114",
+            "pos": [
+                "780",
+                "680"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H117"
+            ],
+            "fontSize": "7pt"
+        },
+        {
+            "name": "1학년 \n13반",
+            "code": "R115",
+            "pos": [
+                "840",
+                "710"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H118"
+            ],
+            "fontSize": "7pt"
+        },
+        {
+            "name": "1층급식실계단",
+            "code": "S101",
+            "pos": [
+                "340",
+                "187"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H101"
+            ]
+        },
+        {
+            "name": "1층A동계단",
+            "code": "S102",
+            "pos": [
+                "705",
+                "187"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H105"
+            ]
+        },
+        {
+            "name": "1층B동계단",
+            "code": "S103",
+            "pos": [
+                "670",
+                "460"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H110"
+            ]
+        },
+        {
+            "name": "1층C동계단",
+            "code": "S104",
+            "pos": [
+                "885",
+                "710"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H119"
+            ]
+        },
+        {
+            "name": "H101",
+            "code": "H101",
+            "pos": [
+                "340",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "R101",
+                "S101",
+                "H102"
+            ]
+        },
+        {
+            "name": "H102",
+            "code": "H102",
+            "pos": [
+                "470",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H101",
+                "R102",
+                "R103",
+                "H103"
+            ]
+        },
+        {
+            "name": "H103",
+            "code": "H103",
+            "pos": [
+                "570",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H102",
+                "H104",
+                "R104"
+            ]
+        },
+        {
+            "name": "H104",
+            "code": "H104",
+            "pos": [
+                "628",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H103",
+                "H105",
+                "R105"
+            ]
+        },
+        {
+            "name": "H105",
+            "code": "H105",
+            "pos": [
+                "705",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H104",
+                "H106",
+                "H107",
+                "S102"
+            ]
+        },
+        {
+            "name": "H106",
+            "code": "H106",
+            "pos": [
+                "750",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "R106",
+                "R107",
+                "H105"
+            ]
+        },
+        {
+            "name": "H107",
+            "code": "H107",
+            "pos": [
+                "720",
+                "290"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H105",
+                "H108"
+            ]
+        },
+        {
+            "name": "H108",
+            "code": "H108",
+            "pos": [
+                "710",
+                "360"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H107",
+                "H109"
+            ]
+        },
+        {
+            "name": "H109",
+            "code": "H109",
+            "pos": [
+                "710",
+                "440"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H108",
+                "H110",
+                "H111",
+                "H114"
+            ]
+        },
+        {
+            "name": "H110",
+            "code": "H110",
+            "pos": [
+                "670",
+                "440"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H109",
+                "S103"
+            ]
+        },
+        {
+            "name": "H111",
+            "code": "H111",
+            "pos": [
+                "798",
+                "440"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "R108",
+                "H109",
+                "H112"
+            ]
+        },
+        {
+            "name": "H112",
+            "code": "H112",
+            "pos": [
+                "848",
+                "440"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H111",
+                "R109",
+                "H113"
+            ]
+        },
+        {
+            "name": "H113",
+            "code": "H113",
+            "pos": [
+                "902",
+                "440"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H112",
+                "R110"
+            ]
+        },
+        {
+            "name": "H114",
+            "code": "H114",
+            "pos": [
+                "715",
+                "515"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H109",
+                "R111",
+                "H115"
+            ]
+        },
+        {
+            "name": "H115",
+            "code": "H115",
+            "pos": [
+                "730",
+                "570"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H114",
+                "R112",
+                "H116"
+            ]
+        },
+        {
+            "name": "H116",
+            "code": "H116",
+            "pos": [
+                "756",
+                "612"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H115",
+                "R113",
+                "H117"
+            ]
+        },
+        {
+            "name": "H117",
+            "code": "H117",
+            "pos": [
+                "795",
+                "645"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H116",
+                "R114",
+                "H118"
+            ]
+        },
+        {
+            "name": "H118",
+            "code": "H118",
+            "pos": [
+                "845",
+                "670"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H117",
+                "R115",
+                "H119"
+            ]
+        },
+        {
+            "name": "H119",
+            "code": "H119",
+            "pos": [
+                "885",
+                "680"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H118",
+                "S104"
+            ]
+        },
+        {
+            "name": "주차장",
+            "code": "E101",
+            "pos": [
+                "820",
+                "360"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "운동장",
+            "code": "E102",
+            "pos": [
+                "330",
+                "670"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [],
+            "fontSize": "13pt"
+        }
+    ]
+}

@@ -17,8 +17,15 @@
         rel="stylesheet" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
     <script src="js/autocompletion.js"></script>
     <script src="js/mapfinding.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
 
 </head>
 
@@ -26,7 +33,7 @@
     <div class="container">
         <div class="header maingriditem">
             <span class="subject aligncenter bfont">용인홍천고등학교 길라잡이</span>
-            <span class="version">version: indev_230610</span>
+            <span class="version">version: indev_230811</span>
         </div>
         <div class="map maingriditem"></div>
         <div class="controlPanel maingriditem" style="padding:30px">
@@ -51,6 +58,9 @@
                             oninput="makeRecommendList(this, 'location')" onblur="clearSuggestions(this)">
                         <div class="suggestionList" id="endInput" style="width:40%;">
                         </div>
+                    </div>
+                    <div class="columnflex" style="width:30%; text-align: center;">
+                        <button id="mapfindBtn" onclick="findMap()">찾기</button>
                     </div>
                 </div>
             </div>

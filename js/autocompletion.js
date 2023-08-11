@@ -1,15 +1,49 @@
-async function getJSONArray(type) {
-    let path;
-    if (type == "person")
-        path = '../json/person_infos.json';
-    else
-        path = '../json/nodes.json';
-
+async function getFloorNodes(floor) {
+    let path = '../json/floor' + floor + '.json';
     try {
         const response = await fetch(path);
         const data = await response.json();
         let dataArray = data.items || [ data ];
 
+        return dataArray;
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+async function getAllNodes() {
+    let dataArray = [];
+    try {
+        for (var i = 1; i <= 1; i++) //TODO: 5층 확장
+            dataArray = [ ...dataArray, ...await getFloorNodes(i) ];
+        return dataArray;
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+async function getJSONArray(type) {
+    let path;
+    if (type == "person") {
+        path = '../json/person_infos.json';
+        try {
+            const response = await fetch(path);
+            const data = await response.json();
+            let dataArray = data.items || [ data ];
+
+            dataArray.sort((a, b) => {
+                if (a.name < b.name)
+                    return -1;
+                if (a.name > b.name)
+                    return 1;
+                return 0;
+            });
+            return dataArray;
+        } catch (err) {
+            console.error(err);
+        }
+    } else {
+        let dataArray = await getAllNodes();
         dataArray.sort((a, b) => {
             if (a.name < b.name)
                 return -1;
@@ -18,8 +52,6 @@ async function getJSONArray(type) {
             return 0;
         });
         return dataArray;
-    } catch (err) {
-        console.error(err);
     }
 }
 
@@ -28,11 +60,13 @@ async function getRecommendedList(text, list, type, emphasize = true) {
     let data = await list;
     if (type == "person") {
         data = await data.filter(infos => {
+            infos.name = infos.name.replace('\n', '');
             return (infos.name || '').match(regex) || (infos.subject || '').match(regex) || (infos.class || '').match(regex) || (infos.office || '').match(regex);
         })
     } else {
         data = await data.filter(infos => {
-            return (infos.name || '').match(regex) || (infos.homeroomTeacher || '').match(regex);
+            infos.name = infos.name.replace('\n', '');
+            return (infos.code[ 0 ] == 'R') && ((infos.name || '').match(regex) || (infos.homeroomTeacher || '').match(regex));
         })
     }
 
@@ -97,6 +131,9 @@ async function makeRecommendList(elem, type, emphasize = true) {
 
     let suggestionListTag = document.getElementsByClassName('suggestionList').namedItem(elem.id);
     clearSuggestions(elem);
+
+    if (recommendedList.length > 6)
+        recommendedList.length = 6;
 
     recommendedList.forEach((a, i) => {
         const temp = document.createElement("div");

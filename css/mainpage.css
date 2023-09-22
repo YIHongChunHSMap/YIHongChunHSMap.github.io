@@ -284,4 +284,8 @@
         background-color: #02c72c;
         transition: background-color .3s ease-in;
     }
+
+    line {
+        opacity: .7;
+    }
 }

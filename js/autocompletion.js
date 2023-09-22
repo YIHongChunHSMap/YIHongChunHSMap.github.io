@@ -14,7 +14,7 @@ async function getFloorNodes(floor) {
 async function getAllNodes() {
     let dataArray = [];
     try {
-        for (var i = 1; i <= 1; i++) //TODO: 5층 확장
+        for (var i = 1; i <= 5; i++)
             dataArray = [ ...dataArray, ...await getFloorNodes(i) ];
         return dataArray;
     } catch (err) {

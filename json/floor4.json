@@ -1,0 +1,555 @@
+{
+    "items": [
+        {
+            "name": "2학년 \n상담실",
+            "code": "R408",
+            "pos": [
+                "597",
+                "265"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H403"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "2학년 \n교무실",
+            "code": "R409",
+            "pos": [
+                "655",
+                "265"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H403"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "",
+            "code": "R410",
+            "pos": [
+                "748",
+                "187"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H405"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "생물실",
+            "code": "R411",
+            "pos": [
+                "804",
+                "187"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H405"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "과학\n교무실",
+            "code": "R412",
+            "pos": [
+                "841",
+                "182"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H406"
+            ],
+            "fontSize": "6pt"
+        },
+        {
+            "name": "화학실",
+            "code": "R413",
+            "pos": [
+                "910",
+                "187"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H407"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "2학년 \n5반",
+            "code": "R414",
+            "pos": [
+                "751",
+                "268"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H405"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "2학년 \n6반",
+            "code": "R415",
+            "pos": [
+                "804",
+                "268"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H405"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "2학년 \n7반",
+            "code": "R416",
+            "pos": [
+                "855",
+                "268"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H406"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "2학년 \n8반",
+            "code": "R417",
+            "pos": [
+                "910",
+                "268"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H407"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "3학년 \n4반",
+            "code": "R418",
+            "pos": [
+                "800",
+                "463"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H411"
+            ],
+            "fontSize": "8pt"
+        },
+        {
+            "name": "3학년 \n5반",
+            "code": "R419",
+            "pos": [
+                "851",
+                "463"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H412"
+            ],
+            "fontSize": "8pt"
+        },
+        {
+            "name": "3학년 \n6반",
+            "code": "R420",
+            "pos": [
+                "905",
+                "463"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H413"
+            ],
+            "fontSize": "8pt"
+        },
+        {
+            "name": "3학년 \n상담실",
+            "code": "R421",
+            "pos": [
+                "675",
+                "515"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H414"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "3학년 \n교무실",
+            "code": "R422",
+            "pos": [
+                "693",
+                "580"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H415"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "3학년 \n7반",
+            "code": "R423",
+            "pos": [
+                "730",
+                "640"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H416"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "3학년 \n8반",
+            "code": "R424",
+            "pos": [
+                "780",
+                "680"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H417"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "3학년 \n9반",
+            "code": "R425",
+            "pos": [
+                "840",
+                "710"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H418"
+            ],
+            "fontSize": "10pt"
+        },
+        {
+            "name": "4층급식실계단",
+            "code": "S401",
+            "pos": [
+                "340",
+                "187"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H401",
+                "S101",
+                "S201",
+                "S301",
+                "S501"
+            ]
+        },
+        {
+            "name": "4층A동계단",
+            "code": "S402",
+            "pos": [
+                "705",
+                "187"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H404",
+                "S102",
+                "S202",
+                "S302",
+                "S502"
+            ]
+        },
+        {
+            "name": "4층B동계단",
+            "code": "S403",
+            "pos": [
+                "670",
+                "460"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H410",
+                "S103",
+                "S203",
+                "S303",
+                "S503"
+            ]
+        },
+        {
+            "name": "4층C동계단",
+            "code": "S404",
+            "pos": [
+                "885",
+                "710"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H419",
+                "S104",
+                "S204",
+                "S304"
+            ]
+        },
+        {
+            "name": "H401",
+            "code": "H401",
+            "pos": [
+                "340",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "R405",
+                "S401"
+            ]
+        },
+        {
+            "name": "H403",
+            "code": "H403",
+            "pos": [
+                "620",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H404",
+                "R404",
+                "R408",
+                "R409"
+            ]
+        },
+        {
+            "name": "H404",
+            "code": "H404",
+            "pos": [
+                "705",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H403",
+                "H405",
+                "H408",
+                "S402"
+            ]
+        },
+        {
+            "name": "H405",
+            "code": "H405",
+            "pos": [
+                "780",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H404",
+                "H406",
+                "R410",
+                "R411",
+                "R414",
+                "R415"
+            ]
+        },
+        {
+            "name": "H406",
+            "code": "H406",
+            "pos": [
+                "855",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "R412",
+                "R416",
+                "H405",
+                "H407"
+            ]
+        },
+        {
+            "name": "H407",
+            "code": "H407",
+            "pos": [
+                "910",
+                "230"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H406",
+                "R413",
+                "R417"
+            ]
+        },
+        {
+            "name": "H408",
+            "code": "H408",
+            "pos": [
+                "710",
+                "360"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H404",
+                "H409"
+            ]
+        },
+        {
+            "name": "H409",
+            "code": "H409",
+            "pos": [
+                "710",
+                "440"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H408",
+                "H410",
+                "H411",
+                "H414"
+            ]
+        },
+        {
+            "name": "H410",
+            "code": "H410",
+            "pos": [
+                "670",
+                "440"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H409",
+                "S403"
+            ]
+        },
+        {
+            "name": "H411",
+            "code": "H411",
+            "pos": [
+                "798",
+                "440"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "R418",
+                "H409",
+                "H412"
+            ]
+        },
+        {
+            "name": "H412",
+            "code": "H412",
+            "pos": [
+                "848",
+                "440"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H411",
+                "R419",
+                "H413"
+            ]
+        },
+        {
+            "name": "H413",
+            "code": "H413",
+            "pos": [
+                "902",
+                "440"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H412",
+                "R420"
+            ]
+        },
+        {
+            "name": "H414",
+            "code": "H414",
+            "pos": [
+                "715",
+                "515"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H409",
+                "R421",
+                "H415"
+            ]
+        },
+        {
+            "name": "H415",
+            "code": "H415",
+            "pos": [
+                "730",
+                "570"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H414",
+                "R422",
+                "H416"
+            ]
+        },
+        {
+            "name": "H416",
+            "code": "H416",
+            "pos": [
+                "756",
+                "612"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H415",
+                "R423",
+                "H417"
+            ]
+        },
+        {
+            "name": "H417",
+            "code": "H417",
+            "pos": [
+                "795",
+                "645"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H416",
+                "R424",
+                "H418"
+            ]
+        },
+        {
+            "name": "H418",
+            "code": "H418",
+            "pos": [
+                "845",
+                "670"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H417",
+                "R425",
+                "H419"
+            ]
+        },
+        {
+            "name": "H419",
+            "code": "H419",
+            "pos": [
+                "885",
+                "680"
+            ],
+            "homeroomTeacher": "-",
+            "adjList": [
+                "H418",
+                "S404"
+            ]
+        }
+    ]
+}

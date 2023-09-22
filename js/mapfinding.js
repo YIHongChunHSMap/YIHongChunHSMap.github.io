@@ -31,7 +31,7 @@ async function getFloorNodes(floor) {
 async function getAllNodes() {
     let dataArray = [];
     try {
-        for (var i = 1; i <= 1; i++) //TODO: 5층까지 늘려주기
+        for (var i = 1; i <= 5; i++)
             dataArray = [ ...dataArray, ...await getFloorNodes(i) ];
         return dataArray;
     } catch (err) {
@@ -64,7 +64,7 @@ function changeOpacity(elem, level) {
 
 function internal_fadeOut(elem, level, outTimer) {
     level = level - 0.1;
-    console.log(level);
+    //console.log(level);
     changeOpacity(elem, level);
     if (level < 0)
         clearInterval(outTimer);
@@ -102,6 +102,7 @@ async function loadFloorMap(floor) {
     svg = document.getElementById("mp");
     floorData = await getFloorNodes(floor);
     for (e of floorData) {
+        ////////////////////////////////////////////////////////////// for debug
         if (e.code[ 0 ] == 'R' || e.code[ 0 ] == 'E') {
             var txt = document.createElementNS("http://www.w3.org/2000/svg", "text");
             txt.setAttributeNS(null, "x", e.pos[ 0 ]);
@@ -127,15 +128,16 @@ async function loadFloorMap(floor) {
         }
     }
     //$('img[usemap]').rwdImageMaps();
+    curFloor = floor;
     await fadeIn(mapElem);
 }
 
 //cost function f(n) = g(n) + h(n)
 async function gCost(start, cur) {
-    return Math.round(Math.sqrt(Math.pow((cur.pos[ 0 ] - start.pos[ 0 ]), 2) + Math.pow((cur.pos[ 1 ] - start.pos[ 1 ]), 2)));
+    return Math.round(Math.sqrt(Math.pow((cur.pos[ 0 ] - start.pos[ 0 ]), 2) + Math.pow((cur.pos[ 1 ] - start.pos[ 1 ]), 2))) + 400 * Math.abs(cur.code[ 1 ] - start.code[ 1 ]);
 }
 async function hCost(cur, end) {
-    return Math.abs(cur.pos[ 0 ] - end.pos[ 0 ]) + Math.abs(cur.pos[ 1 ] - end.pos[ 1 ]);
+    return Math.abs(cur.pos[ 0 ] - end.pos[ 0 ]) + Math.abs(cur.pos[ 1 ] - end.pos[ 1 ]) + 400 * Math.abs(cur.code[ 1 ] - end.code[ 1 ]);
 }
 async function cost(start, cur, end) {
     return await gCost(start, cur) + await hCost(cur, end);
@@ -239,7 +241,7 @@ async function findMap() {
     pq.push([ startNode, await cost(codeNInfo.get(startNode), codeNInfo.get(startNode), codeNInfo.get(endNode)), startNode ]);
     while (!pq.empty()) {
         let cur = pq.pop();
-        console.log(cur);
+        //console.log(cur);
         if (!visited.has(cur[ 0 ]) || visited.get(cur[ 0 ])[ 1 ] < cur[ 1 ])
             visited.set(cur[ 0 ], cur);
         if (cur[ 0 ] == endNode)
@@ -258,12 +260,12 @@ async function findMap() {
         cur = visited.get(cur)[ 2 ];
         path = [ cur, ...path ];
     }
-    console.log(path);
+    //console.log(path);
 
     let p1, p2;
     for (let i = 0; i < path.length - 1; i++) {
-        console.log(path[ i ]);
-        console.log(path[ i ][ 1 ]);
+        //console.log(path[ i ]);
+        //console.log(path[ i ][ 1 ]);
         if (parseInt(path[ i ][ 1 ]) == curFloor && parseInt(path[ i + 1 ][ 1 ]) == curFloor) {
             p1 = codeNInfo.get(path[ i ]).pos;
             p2 = codeNInfo.get(path[ i + 1 ]).pos;
@@ -289,5 +291,7 @@ async function webpageOnload() {
         nodeInfo.set(node.name.replace('\n', ''), node);
         codeNInfo.set(node.code, node);
     }
+    /////////////////////////////////////for debug - loadFloorMap
+    //loadFloorMap(5);
     setMainMapMode();
 }

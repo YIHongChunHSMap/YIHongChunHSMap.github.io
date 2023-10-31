@@ -26,7 +26,7 @@
     <div class="container">
         <div class="header maingriditem">
             <span class="subject aligncenter bfont">용인홍천고등학교 길라잡이</span>
-            <span class="version">version: indev_230811</span>
+            <span class="version">version: indev_231029</span>
         </div>
         <div class="map maingriditem"></div>
         <div class="controlPanel maingriditem" style="padding:30px">
@@ -55,6 +55,25 @@
                     <div class="columnflex" style="width:30%; text-align: center;">
                         <button id="mapfindBtn" onclick="findMap()">찾기</button>
                     </div>
+                </div>
+            </div>
+            <div class="columnflex" style="margin-top:1.2em; position:relative;">
+                <span class="exbfont aligncenter" style="font-size:15pt">층 선택</span>
+                <div class="rowflex aligncenter floorBtnGroup" style="margin-top:0.3em;">
+                    <input name="curFloor" type="radio" id="floorBtn1" class="floorBtn" onclick="loadFloorMap(1)">
+                    <label for="floorBtn1" class="floorBtn__label">1층</label>
+
+                    <input name="curFloor" type="radio" id="floorBtn2" class="floorBtn" onclick="loadFloorMap(2)">
+                    <label for="floorBtn2" class="floorBtn__label">2층</label>
+
+                    <input name="curFloor" type="radio" id="floorBtn3" class="floorBtn" onclick="loadFloorMap(3)">
+                    <label for="floorBtn3" class="floorBtn__label">3층</label>
+
+                    <input name="curFloor" type="radio" id="floorBtn4" class="floorBtn" onclick="loadFloorMap(4)">
+                    <label for="floorBtn4" class="floorBtn__label">4층</label>
+
+                    <input name="curFloor" type="radio" id="floorBtn5" class="floorBtn" onclick="loadFloorMap(5)">
+                    <label for="floorBtn5" class="floorBtn__label">5층</label>
                 </div>
             </div>
         </div>

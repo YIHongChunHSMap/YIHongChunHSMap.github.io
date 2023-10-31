@@ -176,7 +176,7 @@
                 "751",
                 "268"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "이혜진",
             "adjList": [
                 "H205"
             ],
@@ -189,7 +189,7 @@
                 "804",
                 "268"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "백주영",
             "adjList": [
                 "H205"
             ],
@@ -202,7 +202,7 @@
                 "855",
                 "268"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "임현주",
             "adjList": [
                 "H206"
             ],
@@ -215,7 +215,7 @@
                 "910",
                 "268"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "김다혜",
             "adjList": [
                 "H207"
             ],
@@ -228,7 +228,7 @@
                 "800",
                 "463"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "이상민",
             "adjList": [
                 "H211"
             ],
@@ -241,7 +241,7 @@
                 "851",
                 "463"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "이다정",
             "adjList": [
                 "H212"
             ],
@@ -254,7 +254,7 @@
                 "905",
                 "463"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "박혜연",
             "adjList": [
                 "H213"
             ],
@@ -293,7 +293,7 @@
                 "730",
                 "640"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "장명희",
             "adjList": [
                 "H216"
             ],
@@ -306,20 +306,20 @@
                 "780",
                 "680"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "박혜영",
             "adjList": [
                 "H217"
             ],
             "fontSize": "10pt"
         },
         {
-            "name": "",
+            "name": "1학년 \n11반",
             "code": "R225",
             "pos": [
                 "840",
                 "710"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "김지현",
             "adjList": [
                 "H218"
             ],

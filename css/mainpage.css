@@ -3,6 +3,16 @@
 /* Mobiles and others */
 
 /* layouts */
+
+:root {
+    --accent: mediumspringgreen;
+    --accent-2: mediumspringgreen;
+    --text: black;
+    --text-hover: var(--accent);
+    --text-active: white;
+    --border-width: 0.125em;
+}
+
 .container {
     display: grid;
     height: fit-content;
@@ -288,4 +298,70 @@
     line {
         opacity: .7;
     }
+
+    .floorBtnGroup {
+        background-color: aliceblue;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        height: 2.5em;
+        width: auto;
+
+        display: flex;
+        flex-direction: row-reverse;
+
+        >* {
+            flex: 0 0 20%;
+        }
+
+        &:after {
+            content: "";
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            /* border: var(--border-width) solid var(--accent); */
+            border-radius: 5px;
+            pointer-events: none;
+        }
+    }
+
+    .floorBtn {
+        display: none;
+
+        &:checked+.floorBtn__label {
+            background-color: var(--accent);
+            color: var(--text-active);
+            transform: translate(0, -2px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+
+    .floorBtn__label {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        height: 100%;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.1s ease-out;
+        color: var(--text);
+
+        &:hover {
+            color: var(--text-hover);
+            transform: translate(0, -1px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+    }
+
 }

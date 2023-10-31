@@ -130,6 +130,10 @@ async function loadFloorMap(floor) {
     //$('img[usemap]').rwdImageMaps();
     curFloor = floor;
     await fadeIn(mapElem);
+    findMap();
+
+    let curFloorBtn = document.getElementById('floorBtn' + curFloor);
+    curFloorBtn.checked = true;
 }
 
 //cost function f(n) = g(n) + h(n)

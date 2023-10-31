@@ -46,7 +46,7 @@
                 "570",
                 "271"
             ],
-            "homeroomTeacher": "교장선생님",
+            "homeroomTeacher": "교장",
             "adjList": [
                 "H103"
             ],
@@ -176,11 +176,11 @@
                 "780",
                 "680"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "류소미",
             "adjList": [
                 "H117"
             ],
-            "fontSize": "7pt"
+            "fontSize": "10pt"
         },
         {
             "name": "1학년 \n13반",
@@ -189,11 +189,11 @@
                 "840",
                 "710"
             ],
-            "homeroomTeacher": "-",
+            "homeroomTeacher": "전현욱",
             "adjList": [
                 "H118"
             ],
-            "fontSize": "7pt"
+            "fontSize": "10pt"
         },
         {
             "name": "1층급식실계단",
@@ -204,7 +204,11 @@
             ],
             "homeroomTeacher": "-",
             "adjList": [
-                "H101"
+                "H101",
+                "S201",
+                "S301",
+                "S401",
+                "S501"
             ]
         },
         {
@@ -216,7 +220,11 @@
             ],
             "homeroomTeacher": "-",
             "adjList": [
-                "H105"
+                "H105",
+                "S202",
+                "S302",
+                "S402",
+                "S502"
             ]
         },
         {
@@ -228,7 +236,11 @@
             ],
             "homeroomTeacher": "-",
             "adjList": [
-                "H110"
+                "H110",
+                "S203",
+                "S303",
+                "S403",
+                "S503"
             ]
         },
         {
@@ -240,7 +252,10 @@
             ],
             "homeroomTeacher": "-",
             "adjList": [
-                "H119"
+                "H119",
+                "S204",
+                "S304",
+                "S404"
             ]
         },
         {

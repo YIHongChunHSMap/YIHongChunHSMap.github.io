@@ -161,6 +161,7 @@ async function makeRecommendList(elem, type, emphasize = true) {
                 '<span class=\"mainSuggestion\">' + recommendedList[ i ].name + '</span> ' +
                 '<ul class=\"subSuggestion\">' +
                 '<li> &bull; 담당: ' + recommendedList[ i ].homeroomTeacher + ' 선생님</li>' +
+                '<li><br> &bull; ' + recommendedList[ i ].code[ 1 ] + '층 </li>' +
                 '</ul>' +
                 '</div>'
         }

@@ -295,7 +295,6 @@ async function webpageOnload() {
         nodeInfo.set(node.name.replace('\n', ''), node);
         codeNInfo.set(node.code, node);
     }
-    /////////////////////////////////////for debug - loadFloorMap
-    //loadFloorMap(5);
-    setMainMapMode();
+    loadFloorMap(1);
+    //setMainMapMode(); //mainMap animation; deleted cuz it's not needed
 }

@@ -29,7 +29,7 @@
             <span class="version">version: indev_231029</span>
         </div>
         <div class="map maingriditem"></div>
-        <div class="controlPanel maingriditem" style="padding:30px">
+        <div class="controlPanel maingriditem">
             <div class="columnflex" style="position: relative;">
                 <span class="exbfont aligncenter" style="font-size:15pt">선생님/부서 검색</span>
                 <input id="personnelSearch" autocomplete="off" type="text" placeholder="선생님 혹은 부서를 검색하세요"
@@ -39,17 +39,17 @@
             </div>
             <div class="columnflex" style="margin-top:1.2em; position: relative;">
                 <span class="exbfont aligncenter" style="font-size:15pt">경로 찾기</span>
-                <div class="rowflex aligncenter">
+                <div class="aligncenter pathfindPanel">
                     <div class="columnflex">
-                        <input id="startInput" autocomplete="off" type="text" placeholder="시작점"
+                        <input class="flexInputbox" id="startInput" autocomplete="off" type="text" placeholder="시작점"
                             oninput="makeRecommendList(this, 'location')" onblur="clearSuggestions(this)">
-                        <div class="suggestionList" id="startInput" style="width:40%;">
+                        <div class="suggestionList" id="startInput">
                         </div>
                     </div>
                     <div class="columnflex">
-                        <input id="endInput" autocomplete="off" type="text" placeholder="종착점"
+                        <input class="flexInputbox" id="endInput" autocomplete="off" type="text" placeholder="종착점"
                             oninput="makeRecommendList(this, 'location')" onblur="clearSuggestions(this)">
-                        <div class="suggestionList" id="endInput" style="width:40%;">
+                        <div class="suggestionList" id="endInput">
                         </div>
                     </div>
                     <div class="columnflex" style="width:30%; text-align: center;">
@@ -78,7 +78,7 @@
             </div>
         </div>
         <footer class="info" style="padding: 10px 70px">
-            <b>용인홍천고등학교 길라잡이</b> by aumest &copy; 2023. All rights reserved.<br>
+            <b>용인홍천고등학교 길라잡이</b> by aumest &copy; 2024. All rights reserved.<br>
             Contact: zhxpr1229@gmail.com / <a href="https://github.com/aumest" style="color:gray">Github Profile</a>
         </footer>
 </body>
